@@ -9,4 +9,4 @@ Almost all (the most important) output file properties are configurable in the p
 Just run docx-corruptor.py directly or via any console that supports Python. The configuration is loaded at runtime.
 
 # Dependencies
-Should run in any Python 3 environment. Only standard libraries are used: os, shutil, distutils, configparser, xml, random, datetime, re, zipfile.
+Should run in any Python environment, really. Only standard libraries are used: os (path, walk), shutil (rmtree, copytree), configparser, xml (etree), random (random, randint), datetime, re, zipfile.

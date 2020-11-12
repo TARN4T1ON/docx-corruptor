@@ -1,8 +1,7 @@
-#!/usr/bin/env python3
+#!/usr/bin/env
 
 import os
-from shutil import rmtree
-from distutils.dir_util import copy_tree
+from shutil import rmtree, copytree
 
 from configparser import ConfigParser as configparser
 
@@ -85,8 +84,7 @@ for namespace in xmlNamespaces:
 
 def main():
     rmtree(documentDirectory, ignore_errors=True)
-
-    copy_tree("./doc-template", documentDirectory)
+    copytree("./doc-template", documentDirectory)
 
     # write core xml from settings
 
@@ -196,6 +194,5 @@ def main():
     outFile.close()
 
     return
-
 
 main()
